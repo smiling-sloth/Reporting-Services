@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Details | Report Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Category Title</h1>
+        <p>Detailed description of the selected category.</p>
+    </header>
+    <main>
+        <section id="filters">
+            <h2>Filter Reports</h2>
+            <form id="filter-form">
+                <label for="subcategory">Subcategory:</label>
+                <select id="subcategory" name="subcategory">
+                    <option value="all">All</option>
+                    <option value="subcategory1">Subcategory 1</option>
+                    <option value="subcategory2">Subcategory 2</option>
+                    <!-- Add more subcategories as needed -->
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="keywords">Keywords:</label>
+                <input type="text" id="keywords" name="keywords" placeholder="Enter keywords">
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+        <section id="search">
+            <h2>Search Reports</h2>
+            <form id="search-form">
+                <input type="text" id="search-query" name="search-query" placeholder="Search reports...">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+        <section id="reports-list">
+            <h2>Reports</h2>
+            <div class="report-item">
+                <h3>Report Title 1</h3>
+                <p>Brief description of Report 1.</p>
+                <a href="report-detail.html?report=1">View Report</a>
+            </div>
+            <div class="report-item">
+                <h3>Report Title 2</h3>
+                <p>Brief description of Report 2.</p>
+                <a href="report-detail.html?report=2">View Report</a>
+            </div>
+            <div class="report-item">
+                <h3>Report Title 3</h3>
+                <p>Brief description of Report 3.</p>
+                <a href="report-detail.html?report=3">View Report</a>
+            </div>
+            <!-- Repeat for all reports in the category -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Report Organizer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
